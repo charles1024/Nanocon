@@ -4,6 +4,7 @@ SampleApp::Application.routes.draw do
       get :following, :followers
     end
   end
+  resources :events
   resources :sessions,      only: [:new, :create, :destroy]
   resources :microposts,    only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
@@ -14,4 +15,5 @@ SampleApp::Application.routes.draw do
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/events',  to: 'events#index',         via: 'get'
 end

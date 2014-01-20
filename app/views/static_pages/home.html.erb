@@ -1,34 +1,106 @@
 <% if signed_in? %>
-  <div class="row">
-    <aside class="span4">
-      <section>
-        <%= render 'shared/user_info' %>
-      </section>
-      <section>
-        <%= render 'shared/stats' %>
-      </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-    <div class="span8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
-    </div>
-  </div>  
+<div class="row">
+	<aside class="span4">
+		<section>
+			<%= render 'shared/user_info' %>
+		</section>
+		<section>
+			<%= render 'shared/stats' %>
+		</section>
+		<section>
+			<%= render 'shared/micropost_form' %>
+		</section>
+	</aside>
+	<div class="span8">
+		<h3>Micropost Feed</h3>
+		<%= render 'shared/feed' %>
+	</div>
+</div>
 <% else %>
-  <div class="center hero-unit">
-    <h1>Welcome to the Sample App</h1>
+<div class="hero-unit">
+	<div style="width: 400px; margin: auto; font-size: 70%; text-align: left">
 
-    <h2>
-      This is the home page for the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
+		<h1>Thank YOU!!!!</h1>
 
-    <%= link_to "Sign up now!", signup_path, 
-                                class: "btn btn-large btn-primary" %>
-  </div>
-
-  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+		As Nanocon 2013 moves to the past, to be replaced by planning for Nanocon 2014, the time has come to say thank you to the many many people who make the weekend work.
+		<br />
+		<br />
+		<b>The Planners:</b>
+		<ul>
+			<li>
+				Thank you members of the N.P.C. for weeks of work and thought.
+			</li>
+			<li>
+				Thank you to Charles Williams for taking on the website.
+			</li>
+			<li>
+				Thank you to Sean Taliaferro for taking lead in the meetings.
+			</li>
+			<li>
+				Thank you to Patrick Annett for taking over as floor manager.
+			</li>
+			<li>
+				Thank you to Matt Isler for all the work with the schedule.
+			</li>
+			<li>
+				Thank you to Ashley Von Burtz for being our czarina of propaganda.
+			</li>
+		</ul>
+		<b>The workers:</b>
+		<ul>
+			<li>
+				Thank you to everyone who ran a game, moved tables and chairs, helped in concessions, manned the front table, and otherwise did the thousand and one things needed to keep Nanocon going.
+			</li>
+			<li>
+				Thank you to Chris Kost for heading up concessions.
+			</li>
+			<li>
+				Thank you to Sergio A. Mendez for working with the vendors.
+			</li>
+			<li>
+				Thank you to Alex Johnston-Mulder, Adam Downs and Steven Hoaas for keeping the RPGA area running.
+			</li>
+			<li>
+				Thank you to Travis Bentley for taking over the painting area on short notice.
+			</li>
+		</ul>
+		<b>The guests:</b>
+		<ul>
+			<li>
+				Thanks to all the vendors, presenters and players without whom we would be wasting our time.
+			</li>
+			<li>
+				Thank you to Jeff Howard and Steve Graham for planning IDIG.
+			</li>
+			<li>
+				Thank you to Terri Hoff, Kevin and Sean McGrady, Silver Gryphon-Games, Dragon's Den, and Jessica Au Buchon for bringing your stores and your skills.
+			</li>
+			<li>
+				Thank you to SIS and Adam Kost, Katherine Cox, and everyone else who helped the society.
+			</li>
+			<li>
+				Thank you to Richard Dansky, Matt Forbeck, Ken Rolston, Geoffrey Long, Seth Hudson, Kris Maxwell, and everyone who shared your knowledge, ideas, and experiences with us.
+			</li>
+			<li>
+				Thank you to Fredd, Linda, and the corgis for sharing your art and time with us.
+			</li>
+		</ul>
+		<b>The alumni:</b>
+		<ul>
+			<li>
+				Thanks to Allen Thiele, Casey Swanson, Matt Waterman, Chad Thoreson, Josh Walsh, Daniel Massey, Travis Boyd, Roger Tienter, Dana Vorachek, Jason Jenkins and all the other members of the DSU gaming community who returned to play again.
+			</li>
+		</ul>
+		<b>The players:</b>
+		<ul>
+			<li>
+				Thank you most of all to everyone who came, played a game, painted a figure, listened to a talk, or just passed the time. In the end you made the weekend work.
+		</ul>
+		<br />
+		So to everyone involved this year and we hope next year, thank you.
+		<br />
+		<br />
+		Glenn Berman
+	</div>
+</div>
 <% end %> 
