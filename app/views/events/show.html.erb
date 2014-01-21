@@ -1,9 +1,31 @@
+<div>
+	<div>
+		<div style="width:30%; float:left">
+			<strong>Event Name:</strong>
+			<%= @event.name %>
+			<br>
+			<strong>NPC</strong>
+			<%= @event.npc %>
+			<br>
+			<strong>Location</strong>
+			<%= @event.location %>
+		</div>
+		<div style="width:30%; float:left">
+			<strong>Date</strong>
+			<%= @event.date %>
+			<br>
+			<strong>Time</strong>
+			<%= @event.time %>
+		</div>
+		<div style="width:100%; float: left">
 
-<p>
-  <strong>Event Name:</strong>
-  <%= @event.name %>
-</p>
-<p>
-  <strong>Event Description:</strong>
-  <%= @event.description %>
-</p>
+			<strong>Event Description:</strong>
+			<%= @event.description %>
+		</div>
+	</div>
+	<div>
+		<%= link_to 'Back', events_path %>
+	| <%= link_to 'Edit', edit_event_path(@event) %>
+	</div>
+	
+</div>
